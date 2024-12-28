@@ -1,13 +1,12 @@
 import React from "react";
 import Chat from "./components/Chat";
-import { CssBaseline, Container } from "@mui/material";
+import "./index.css";
 
 const App: React.FC = () => {
   return (
-    <Container>
-      <CssBaseline />
+    <div>
       <Chat />
-    </Container>
+    </div>
   );
 };
 

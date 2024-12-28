@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   Paper,
   List,
@@ -26,6 +26,7 @@ const Chat: React.FC = () => {
   const [nextId, setNextId] = useState<number>(1);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("/messages.json")
@@ -36,6 +37,10 @@ const Chat: React.FC = () => {
       })
       .catch((error) => console.error("Error fetching messages:", error));
   }, []);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   const handleSendMessage = () => {
     if (input.trim() === "") return;
@@ -68,6 +73,10 @@ const Chat: React.FC = () => {
     setSidebarOpen((prev) => !prev);
   };
 
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Box sx={{ display: "flex", height: "100vh" }}>
       <Sidebar open={sidebarOpen} onToggle={toggleSidebar} />{" "}
@@ -81,8 +90,8 @@ const Chat: React.FC = () => {
           p: 2,
           width: "100%",
           boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
-          bgcolor: "red",
           overflow: "hidden",
+          bgcolor: "green",
         }}
       >
         <IconButton
@@ -117,6 +126,7 @@ const Chat: React.FC = () => {
               flexGrow: 1,
               paddingRight: "8px", // Add padding to avoid scrollbar overlap
               maxHeight: "calc(100vh - 200px)", // Adjust this value as needed
+              position: "relative",
             }}
           >
             <List>
@@ -161,6 +171,7 @@ const Chat: React.FC = () => {
                 />
               </Box>
             )}
+            <div ref={messagesEndRef} />
           </Box>
         </Paper>
         <Box
