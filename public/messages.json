@@ -18,5 +18,170 @@
     "id": 4,
     "sender": "bot",
     "message": "Sure, I can help with that. What seems to be the issue?"
+  },
+  {
+    "id": 5,
+    "sender": "user",
+    "message": "I forgot my password and can't log in."
+  },
+  {
+    "id": 6,
+    "sender": "bot",
+    "message": "No problem! Have you tried using the 'Forgot Password' link on the login page?"
+  },
+  {
+    "id": 7,
+    "sender": "user",
+    "message": "Yes, but I didn't receive the password reset email."
+  },
+  {
+    "id": 8,
+    "sender": "bot",
+    "message": "I see. Sometimes the email can end up in your spam or junk folder. Have you checked there?"
+  },
+  {
+    "id": 9,
+    "sender": "user",
+    "message": "Yes, I checked everywhere. Nothing there."
+  },
+  {
+    "id": 10,
+    "sender": "bot",
+    "message": "Alright. Can you provide the email address associated with your account so I can investigate further?"
+  },
+  {
+    "id": 11,
+    "sender": "user",
+    "message": "It's user@example.com."
+  },
+  {
+    "id": 12,
+    "sender": "bot",
+    "message": "Thank you. Let me check that for you. One moment, please."
+  },
+  {
+    "id": 13,
+    "sender": "bot",
+    "message": "It appears there was a typo in your email address in our system. I'll correct that for you. Can I resend the reset email now?"
+  },
+  {
+    "id": 14,
+    "sender": "user",
+    "message": "Yes, please do."
+  },
+  {
+    "id": 15,
+    "sender": "bot",
+    "message": "Done! The reset email should arrive in a few minutes. Let me know if you receive it."
+  },
+  {
+    "id": 16,
+    "sender": "user",
+    "message": "I got it! Thanks a lot."
+  },
+  {
+    "id": 17,
+    "sender": "bot",
+    "message": "You're welcome! Is there anything else I can assist you with?"
+  },
+  {
+    "id": 18,
+    "sender": "user",
+    "message": "Actually, yes. I want to update my profile information."
+  },
+  {
+    "id": 19,
+    "sender": "bot",
+    "message": "Sure thing. You can update your profile by going to the 'Settings' page and editing your details. Do you need help finding that?"
+  },
+  {
+    "id": 20,
+    "sender": "user",
+    "message": "No, I think I can find it. Thanks!"
+  },
+  {
+    "id": 21,
+    "sender": "bot",
+    "message": "Great! Let me know if you have any other questions."
+  },
+  {
+    "id": 22,
+    "sender": "user",
+    "message": "Actually, one more thing. How can I upgrade my subscription?"
+  },
+  {
+    "id": 23,
+    "sender": "bot",
+    "message": "Upgrading is simple. Go to the 'Subscription' section in your account, select the plan you want, and follow the prompts to complete the upgrade."
+  },
+  {
+    "id": 24,
+    "sender": "user",
+    "message": "Will I be charged immediately, or will it be prorated?"
+  },
+  {
+    "id": 25,
+    "sender": "bot",
+    "message": "Great question. Any upgrades are prorated based on the remaining time in your current billing cycle."
+  },
+  {
+    "id": 26,
+    "sender": "user",
+    "message": "Good to know. I’ll upgrade later. Thank you for all the help!"
+  },
+  {
+    "id": 27,
+    "sender": "bot",
+    "message": "You're very welcome! Have a great day!"
+  },
+  {
+    "id": 28,
+    "sender": "user",
+    "message": "Wait, can I ask something about security settings?"
+  },
+  {
+    "id": 29,
+    "sender": "bot",
+    "message": "Of course! What would you like to know?"
+  },
+  {
+    "id": 30,
+    "sender": "user",
+    "message": "How do I enable two-factor authentication?"
+  },
+  {
+    "id": 31,
+    "sender": "bot",
+    "message": "To enable two-factor authentication, go to 'Security Settings' in your account. You'll find an option to activate it there. Do you need a step-by-step guide?"
+  },
+  {
+    "id": 32,
+    "sender": "user",
+    "message": "Yes, please."
+  },
+  {
+    "id": 33,
+    "sender": "bot",
+    "message": "Sure! Step 1: Log in to your account. Step 2: Navigate to 'Security Settings.' Step 3: Click on 'Enable Two-Factor Authentication.' Step 4: Follow the on-screen instructions to link your account to an authenticator app or set up SMS verification."
+  },
+  {
+    "id": 34,
+    "sender": "user",
+    "message": "Got it. I'll set that up. Thank you again!"
+  },
+  {
+    "id": 35,
+    "sender": "bot",
+    "message": "You're welcome! Stay safe and let me know if you need anything else."
+  },
+  {
+    "id": 36,
+    "sender": "user",
+    "message": "I think that’s all for now. Have a great day!"
+  },
+  {
+    "id": 37,
+    "sender": "bot",
+    "message": "You too! Goodbye!"
   }
 ]
